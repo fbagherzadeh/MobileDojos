@@ -89,6 +89,7 @@ struct Matrix {
         }
     }
 
+    //lets make a subscript with get and set
     subscript(row: Int, column: Int) -> Int? {
         get {
             guard data.indices.contains(row),
@@ -101,3 +102,9 @@ struct Matrix {
         }
     }
 }
+
+
+//Prompts:
+//* explain O(1) vs O(n) for an array collection for example
+//* assuming an array has 100 elements, why array[99] is O(1) and not O(n)?
+//* what is the O of indices.contains(index) for an array?
