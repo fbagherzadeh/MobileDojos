@@ -11,7 +11,7 @@ import SwiftUI
 struct MobileDojoApp: App {
     var body: some Scene {
         WindowGroup {
-            SubscriptsDojo()
+            AppContentView()
         }
     }
 }
