@@ -8,42 +8,46 @@
 import SwiftUI
 
 struct TopicsView: View {
-    @State var columnVisibility: NavigationSplitViewVisibility = .all
-    @State var selection: TopicMenuItem?
+  @State var columnVisibility: NavigationSplitViewVisibility = .all
+  @State var selection: TopicMenuItem?
 
-    var body: some View {
-        NavigationSplitView(
-            columnVisibility: $columnVisibility) {
-                List(
-                    TopicMenuItem.allCases,
-                    id: \.self,
-                    selection: $selection
-                ) {
-                    Text($0.rawValue)
-                }
-                .navigationTitle("Topics")
-                .navigationBarTitleDisplayMode(.large)
-            } detail: {
-                Group {
-                    switch selection {
-                    case .subscripts:
-                        SubscriptsDojo()
-                    case .formatterBasic:
-                        FormatterView()
-                    case .none:
-                        EmptyView()
-                    }
-                }
-                .navigationTitle(selection?.rawValue ?? "")
-            }
-    }
+  var body: some View {
+    NavigationSplitView(
+      columnVisibility: $columnVisibility) {
+        List(
+          TopicMenuItem.allCases,
+          id: \.self,
+          selection: $selection
+        ) { item in
+          HStack {
+            Text(item.rawValue)
+            Spacer()
+            Image(systemName: "chevron.right")
+          }
+        }
+        .navigationTitle("Topics")
+        .navigationBarTitleDisplayMode(.large)
+      } detail: {
+        Group {
+          switch selection {
+          case .subscripts:
+            SubscriptsDojo()
+          case .formatterBasic:
+            FormatterView()
+          case .none:
+            EmptyView()
+          }
+        }
+        .navigationTitle(selection?.rawValue ?? "")
+      }
+  }
 }
 
 enum TopicMenuItem: String, CaseIterable {
-    case subscripts = "Subscripts"
-    case formatterBasic = "Formatter - Part 1"
+  case subscripts = "Subscripts"
+  case formatterBasic = "Formatter - Part 1"
 }
 
 #Preview {
-    TopicsView()
+  TopicsView()
 }
