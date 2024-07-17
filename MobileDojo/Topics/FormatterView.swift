@@ -64,7 +64,7 @@ struct FormatterView: View {
           .padding(.top)
         Text("• Date")
         formatterExampleView(newStyleFormattedDate)
-        formatterExampleView(Date.now.addingTimeInterval(-604800).formatted(.relative(presentation: .named)))
+        formatterExampleView(Date.now.addingTimeInterval(-604800).formatted(.relative(presentation: .numeric)))
         formatterExampleView(Date.now.formatted(date: .abbreviated, time: .omitted))
         formatterExampleView(Date.now.formatted(.dateTime.day(.twoDigits).month(.abbreviated).year(.twoDigits)))
         formatterExampleView(Date.now.formatted(.iso8601))
@@ -78,12 +78,19 @@ struct FormatterView: View {
         Text("• Unit")
         formatterExampleView(
           Measurement<UnitMass>(value: 3.5, unit: .kilograms)
-            .formatted(.measurement(width: .abbreviated))
+            .formatted(
+              .measurement(
+                width: .abbreviated,
+                usage: .asProvided,
+                numberFormatStyle: .init(locale: .init(identifier: "en_AU"))
+              )
+            )
+//            .formatted(.measurement(width: .abbreviated))
         )
 
         Text("• Array")
-        formatterExampleView(["iOS", "Android"].formatted(.list(type: .or)))
-        formatterExampleView(["iOS", "Android"].formatted(RelationshipStatus.break))
+        formatterExampleView(["iOS", "Android", "Foo"].formatted(.list(type: .or)))
+        formatterExampleView(["iOS", "Android", "Foo"].formatted(RelationshipStatus.love))
       }
     }
     .padding()
