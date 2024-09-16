@@ -1,5 +1,5 @@
 //
-//  FormatterTalkView.swift
+//  FormatterBasicView.swift
 //  MobileDojo
 //
 //  Created by Farhad Bagherzadeh on 25/6/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FormatterView: View {
+struct FormatterBasicView: View {
   var body: some View {
     ScrollView {
       VStack(alignment: .leading, spacing: 20) {
@@ -97,7 +97,7 @@ struct FormatterView: View {
   }
 }
 
-private extension FormatterView {
+private extension FormatterBasicView {
   var oldStyleFormattedDate: String {
     let formatter = DateFormatter()
     formatter.dateStyle = .medium
@@ -132,7 +132,7 @@ private extension FormatterView {
 }
 
 #Preview {
-  FormatterView()
+  FormatterBasicView()
 }
 
 private enum RelationshipStatus: String, FormatStyle {

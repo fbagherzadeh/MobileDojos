@@ -3,7 +3,7 @@ import SwiftUI
 // Subscripts
 //   a. Documentation > Cmd + Click
 //   b. Convenient but maybe not safe
-struct SubscriptsDojo: View {
+struct SubscriptsView: View {
     let myArray = ["Element 1️⃣", "Element 2️⃣", "Element 3️⃣"]
     @State var selectedElement: String? = nil
 
@@ -25,7 +25,7 @@ struct SubscriptsDojo: View {
 }
 
 #Preview {
-    SubscriptsDojo()
+    SubscriptsView()
 }
 
 // `getItem` for Array

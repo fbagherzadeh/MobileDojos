@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0A10343A2B99ABD7008A1FDF /* MobileDojoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1034392B99ABD7008A1FDF /* MobileDojoApp.swift */; };
-		0A10343C2B99ABD7008A1FDF /* SubscriptsDojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10343B2B99ABD7008A1FDF /* SubscriptsDojo.swift */; };
+		0A10343C2B99ABD7008A1FDF /* SubscriptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10343B2B99ABD7008A1FDF /* SubscriptsView.swift */; };
 		0A10343E2B99ABD9008A1FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A10343D2B99ABD9008A1FDF /* Assets.xcassets */; };
 		0A1034412B99ABD9008A1FDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1034402B99ABD9008A1FDF /* Preview Assets.xcassets */; };
+		0A57CAC62C9253D9009C6805 /* FormatterAdvanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57CAC52C9253D9009C6805 /* FormatterAdvanceView.swift */; };
+		0A57CAC92C925B1D009C6805 /* View+customTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57CAC82C925B1D009C6805 /* View+customTextStyle.swift */; };
 		0AF9BBB32C2A8737001D39A8 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BBB22C2A8737001D39A8 /* AppContentView.swift */; };
 		0AF9BBB62C2A88B1001D39A8 /* TopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BBB52C2A88B1001D39A8 /* TopicsView.swift */; };
-		0AF9BBB82C2A8B25001D39A8 /* FormatterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BBB72C2A8B25001D39A8 /* FormatterView.swift */; };
+		0AF9BBB82C2A8B25001D39A8 /* FormatterBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BBB72C2A8B25001D39A8 /* FormatterBasicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A1034362B99ABD7008A1FDF /* MobileDojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1034392B99ABD7008A1FDF /* MobileDojoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDojoApp.swift; sourceTree = "<group>"; };
-		0A10343B2B99ABD7008A1FDF /* SubscriptsDojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptsDojo.swift; sourceTree = "<group>"; };
+		0A10343B2B99ABD7008A1FDF /* SubscriptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptsView.swift; sourceTree = "<group>"; };
 		0A10343D2B99ABD9008A1FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1034402B99ABD9008A1FDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A57CAC52C9253D9009C6805 /* FormatterAdvanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterAdvanceView.swift; sourceTree = "<group>"; };
+		0A57CAC82C925B1D009C6805 /* View+customTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+customTextStyle.swift"; sourceTree = "<group>"; };
 		0AF9BBB22C2A8737001D39A8 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
 		0AF9BBB52C2A88B1001D39A8 /* TopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsView.swift; sourceTree = "<group>"; };
-		0AF9BBB72C2A8B25001D39A8 /* FormatterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterView.swift; sourceTree = "<group>"; };
+		0AF9BBB72C2A8B25001D39A8 /* FormatterBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterBasicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				0A1034392B99ABD7008A1FDF /* MobileDojoApp.swift */,
 				0AF9BBB22C2A8737001D39A8 /* AppContentView.swift */,
 				0AF9BBB52C2A88B1001D39A8 /* TopicsView.swift */,
+				0A57CAC72C925B0A009C6805 /* Helpers */,
 				0AF9BBB42C2A8879001D39A8 /* Topics */,
 				0A10343D2B99ABD9008A1FDF /* Assets.xcassets */,
 				0A10343F2B99ABD9008A1FDF /* Preview Content */,
@@ -75,11 +80,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0A57CAC72C925B0A009C6805 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A57CAC82C925B1D009C6805 /* View+customTextStyle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0AF9BBB42C2A8879001D39A8 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
-				0A10343B2B99ABD7008A1FDF /* SubscriptsDojo.swift */,
-				0AF9BBB72C2A8B25001D39A8 /* FormatterView.swift */,
+				0A10343B2B99ABD7008A1FDF /* SubscriptsView.swift */,
+				0AF9BBB72C2A8B25001D39A8 /* FormatterBasicView.swift */,
+				0A57CAC52C9253D9009C6805 /* FormatterAdvanceView.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -156,8 +170,10 @@
 			files = (
 				0AF9BBB62C2A88B1001D39A8 /* TopicsView.swift in Sources */,
 				0AF9BBB32C2A8737001D39A8 /* AppContentView.swift in Sources */,
-				0A10343C2B99ABD7008A1FDF /* SubscriptsDojo.swift in Sources */,
-				0AF9BBB82C2A8B25001D39A8 /* FormatterView.swift in Sources */,
+				0A57CAC92C925B1D009C6805 /* View+customTextStyle.swift in Sources */,
+				0A57CAC62C9253D9009C6805 /* FormatterAdvanceView.swift in Sources */,
+				0A10343C2B99ABD7008A1FDF /* SubscriptsView.swift in Sources */,
+				0AF9BBB82C2A8B25001D39A8 /* FormatterBasicView.swift in Sources */,
 				0A10343A2B99ABD7008A1FDF /* MobileDojoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

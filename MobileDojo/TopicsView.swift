@@ -31,9 +31,11 @@ struct TopicsView: View {
         Group {
           switch selection {
           case .subscripts:
-            SubscriptsDojo()
+            SubscriptsView()
           case .formatterBasic:
-            FormatterView()
+            FormatterBasicView()
+          case .formatterAdvance:
+            FormatterAdvanceView()
           case .none:
             EmptyView()
           }
@@ -46,6 +48,7 @@ struct TopicsView: View {
 enum TopicMenuItem: String, CaseIterable {
   case subscripts = "Subscripts"
   case formatterBasic = "Formatter - Part 1"
+  case formatterAdvance = "Formatter - Part 2"
 }
 
 #Preview {
