@@ -38,6 +38,8 @@ struct TopicsView: View {
             FormatterAdvanceView()
           case .redrawingView:
             RedrawingView()
+          case .adaptiveSheetDemo:
+            AdaptiveSheetDemo()
           case .none:
             EmptyView()
           }
@@ -52,6 +54,7 @@ enum TopicMenuItem: String, CaseIterable {
   case formatterBasic = "Formatter - Part 1"
   case formatterAdvance = "Formatter - Part 2"
   case redrawingView = "Redrawing View"
+  case adaptiveSheetDemo = "Adaptive Sheet Demo"
 }
 
 #Preview {
