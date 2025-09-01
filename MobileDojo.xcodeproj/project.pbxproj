@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A07EB902E4965A4000AA2BA /* MatchedGeometryEffectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07EB8F2E4965A4000AA2BA /* MatchedGeometryEffectDemo.swift */; };
 		0A10343A2B99ABD7008A1FDF /* MobileDojoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1034392B99ABD7008A1FDF /* MobileDojoApp.swift */; };
 		0A10343C2B99ABD7008A1FDF /* SubscriptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10343B2B99ABD7008A1FDF /* SubscriptsView.swift */; };
 		0A10343E2B99ABD9008A1FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A10343D2B99ABD9008A1FDF /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A07EB8F2E4965A4000AA2BA /* MatchedGeometryEffectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectDemo.swift; sourceTree = "<group>"; };
 		0A1034362B99ABD7008A1FDF /* MobileDojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1034392B99ABD7008A1FDF /* MobileDojoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDojoApp.swift; sourceTree = "<group>"; };
 		0A10343B2B99ABD7008A1FDF /* SubscriptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptsView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0A57CAC52C9253D9009C6805 /* FormatterAdvanceView.swift */,
 				0AF16F6A2D2E258F00D2DEAE /* RedrawingView.swift */,
 				0AE3425A2D5D7A360096ED66 /* AdaptiveSheetDemo.swift */,
+				0A07EB8F2E4965A4000AA2BA /* MatchedGeometryEffectDemo.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				0AF9BBB62C2A88B1001D39A8 /* TopicsView.swift in Sources */,
 				0AE3425B2D5D7A360096ED66 /* AdaptiveSheetDemo.swift in Sources */,
+				0A07EB902E4965A4000AA2BA /* MatchedGeometryEffectDemo.swift in Sources */,
 				0AF16F6B2D2E258F00D2DEAE /* RedrawingView.swift in Sources */,
 				0AF9BBB32C2A8737001D39A8 /* AppContentView.swift in Sources */,
 				0A57CAC92C925B1D009C6805 /* View+customTextStyle.swift in Sources */,
